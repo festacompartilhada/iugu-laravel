@@ -2,6 +2,7 @@
 
 namespace unaspbr;
 
+use Config;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -9,7 +10,7 @@ use Illuminate\Support\ServiceProvider;
  *
  * @author Mateus Felipe <mateusfccp@gmail.com>
  * @package IuguLaravel
- * @version 1.0.3
+ * @version 1.0.4
  */
 class IuguLaravelServiceProvider extends ServiceProvider
 {

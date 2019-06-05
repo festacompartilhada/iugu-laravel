@@ -2,14 +2,12 @@
 
 namespace unaspbr;
 
-use Config;
-
 /**
  * IuguLaravel ─ Wraps iugu-php to be used on Laravel
  *
  * @author Mateus Felipe <mateusfccp@gmail.com>
  * @package IuguLaravel
- * @version 1.0.3
+ * @version 1.0.4
  */
 class IuguLaravel {
     public static function r($resource)
