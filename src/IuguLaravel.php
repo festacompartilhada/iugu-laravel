@@ -14,9 +14,9 @@ use Config;
 class IuguLaravel {
     public static function r($resource)
     {
-        Iugu::setApiKey(Config::get('iugu_laravel.IUGU_API_KEY'));
+        \Iugu::setApiKey(Config::get('iugu_laravel.IUGU_API_KEY'));
         
-        $class_name = "Iugu_" . strtoupper(substr($resource, 0, 1)) . strtolower(substr($resource, 1));
+        $class_name = "\Iugu_" . strtoupper(substr($resource, 0, 1)) . strtolower(substr($resource, 1));
 
         return $class_name;
     }
