@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
  *
  * @author Mateus Felipe <mateusfccp@gmail.com>
  * @package IuguLaravel
- * @version 0.0.1
+ * @version 1.0.3
  */
 class IuguLaravelServiceProvider extends ServiceProvider
 {
@@ -20,6 +20,8 @@ class IuguLaravelServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        \Iugu::setApiKey(Config::get('iugu_laravel.IUGU_API_KEY'));
+                
         // Publish configuration assets
         $this->publishes([
             __DIR__ . '/config/iugu_laravel.php' => config_path('iugu_laravel.php'),
