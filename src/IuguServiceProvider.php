@@ -6,13 +6,13 @@ use Config;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * IuguLaravel ─ Wraps iugu-php to be used on Laravel
+ * IuguServiceProvider ─ The provider. Woah!
  *
  * @author Mateus Felipe <mateusfccp@gmail.com>
  * @package IuguLaravel
- * @version 1.0.4
+ * @version 1.0.5
  */
-class IuguLaravelServiceProvider extends ServiceProvider
+class IuguServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
