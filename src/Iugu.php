@@ -12,7 +12,13 @@ namespace unaspbr;
 class Iugu {
     public static function r($resource)
     {
-        $class_name = "\Iugu_" . strtoupper(substr($resource, 0, 1)) . strtolower(substr($resource, 1));
+        $resource_class = implode(
+            array_map(function ($word) use ($resource) {
+                return strtoupper(substr($word, 0, 1)) . strtolower(substr($word, 1));
+            }, explode('_', $resource))
+        );
+        
+        $class_name = "\Iugu_" . $resource_class;
 
         return $class_name;
     }
