@@ -13,7 +13,7 @@
     "prefer-stable": true,
     "require": {
 	"php": ">=7.0.33",
-        "iugu/iugu": "^1.0"
+        "iugu/iugu": "dev-master"
     },
     "autoload": {
 	"psr-4": {
