@@ -17,5 +17,13 @@ return [
     |
     */
 
-	'IUGU_API_KEY' => '<YOUR_IUGU_API_KEY>',
+    'production' => [
+        'IUGU_API_KEY' => '<YOUR_IUGU_API_KEY>',
+        'IUGU_ACCOUNT_ID' => '<YOUR_IUGU_ACCOUNT_ID>',
+    ],
+
+    'test' => [
+        'IUGU_API_KEY' => '<YOUR_IUGU_API_KEY>',
+        'IUGU_ACCOUNT_ID' => '<YOUR_IUGU_ACCOUNT_ID>',
+    ],
 ];
