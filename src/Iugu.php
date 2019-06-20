@@ -7,20 +7,16 @@ namespace unaspbr;
  *
  * @author Mateus Felipe <mateusfccp@gmail.com>
  * @package IuguLaravel
- * @version 1.0.5
+ * @version 1.3
  */
 class Iugu {
     public static function r($resource)
     {
-        $resource_class = implode(
-            array_map(function ($word) use ($resource) {
-                return strtoupper(substr($word, 0, 1)) . strtolower(substr($word, 1));
-            }, explode('_', $resource))
-        );
-        
-        $class_name = "\Iugu_" . $resource_class;
+        $class = implode(
+            array_map(
+                function ($word) use ($resource) {return strtoupper(substr($word, 0, 1)) . strtolower(substr($word, 1));},
+                explode('_', $resource)));
 
-        return $class_name;
+        return "unaspbr\Iugu\Invoice";
     }
 }
-

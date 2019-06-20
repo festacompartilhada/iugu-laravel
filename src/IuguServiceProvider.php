@@ -10,7 +10,7 @@ use Illuminate\Support\ServiceProvider;
  *
  * @author Mateus Felipe <mateusfccp@gmail.com>
  * @package IuguLaravel
- * @version 1.0.5
+ * @version 1.3
  */
 class IuguServiceProvider extends ServiceProvider
 {
