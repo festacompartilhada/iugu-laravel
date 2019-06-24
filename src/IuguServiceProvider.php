@@ -23,7 +23,7 @@ class IuguServiceProvider extends ServiceProvider
     {
         $conf = config('app.env') === 'production' ? 'iugu_laravel.production.IUGU_API_KEY' : 'iugu_laravel.test.IUGU_API_KEY';
         
-        \Iugu::setApiKey(Config::get($conf));
+        Iugu\Iugu::setApiKey(Config::get($conf));
                 
         // Publish configuration assets
         $this->publishes([

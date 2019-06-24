@@ -17,6 +17,6 @@ class Iugu {
                 function ($word) use ($resource) {return strtoupper(substr($word, 0, 1)) . strtolower(substr($word, 1));},
                 explode('_', $resource)));
 
-        return "unaspbr\Iugu\Invoice";
+        return "unaspbr\\Iugu\\{$class}";
     }
 }
